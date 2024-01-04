@@ -1,0 +1,25 @@
+<script props>
+  module.exports = {
+    type: props.platform
+  }
+</script>
+
+
+
+<if condition="type==='mc'">
+  <div class="class-{{type}}">
+    <slot:title />
+    <content />
+  </div>
+</if>
+
+<if condition="type!=='mc'">
+  <H1 class="class-{{type}}">
+    <slot:title />
+    <content />
+  </H1>
+</if>
+
+<if condition="type!==''">
+  <{{type}}>Custom</{{type}}>
+</if>

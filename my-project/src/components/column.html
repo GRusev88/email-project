@@ -1,0 +1,54 @@
+<script props>
+  module.exports = {
+    type: props.col,
+  }
+</script>
+
+<if condition="type==='dir'">
+  <th class="col-{{col}}" width="{{width}}" dir="ltr">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="{{style}}" width="{{width}}">
+          <content />
+        </td>
+      </tr>
+    </table>
+  </th>
+</if>
+
+<if condition="type==='top'">
+  <th class="col-{{col}}" width="{{width}}" vertical-align="top" style="vertical-align: top;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="{{style}}" width="{{width}}">
+          <content />
+        </td>
+      </tr>
+    </table>
+  </th>
+</if>
+
+<if condition="type==='dir-top'">
+  <th class="col-{{col}}" width="{{width}}" dir="ltr" vertical-align="top" style="vertical-align: top;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="{{style}}" width="{{width}}">
+          <content />
+        </td>
+      </tr>
+    </table>
+  </th>
+</if>
+
+<if condition="type==='column'">
+  <th class="col-{{col}}" width="{{width}}">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="{{style}}" width="{{width}}">
+          <content />
+        </td>
+      </tr>
+    </table>
+  </th>
+</if>
+ 

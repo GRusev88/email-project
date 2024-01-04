@@ -1,0 +1,40 @@
+<script props>
+  module.exports = {
+    
+    align: {
+      left: 'text-left',
+      center: 'text-center',
+      right: 'text-right',
+    }
+    [props.align],
+    href: props.href,
+    msoPt: props['mso-pt'] || '16px',
+    msoPr: props['mso-pr'] || '32px',
+    msoPb: props['mso-pb'] || '30px',
+    msoPl: props['mso-pl'] || '32px',
+    
+  }
+  
+
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="{{ align }}">
+     <table border="0" cellspacing="0" cellpadding="0" class="{{class}}">
+       <tr>
+         <td class="text-button">
+          <a 
+           attributes
+           href="{{ href }}" target="_blank" style="display: inline-block; text-decoration: none;" class="{{linkColor}} {{buttonPadding}} link">
+             <span 
+               class="{{linkColor}} link">
+               <content />
+             </span>
+           </a>
+        </td>
+       </tr>
+      </table>       
+     </td>
+  </tr>
+ </table>
+

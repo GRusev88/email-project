@@ -1,0 +1,49 @@
+<script props>
+  module.exports = {
+    type: props.platform,
+  }
+</script>
+
+<if condition="type==='mc'">
+  <div mc:repeatable>
+    <slot:title />
+
+    <content />
+  </div>
+</if>
+
+<if condition="type==='cm'">
+  <div campaignmonitor-repeatable>
+    <slot:title />
+
+    <content />
+  </div>
+</if>
+
+<if condition="type==='pr'">
+  <div pardot-repeatable>
+    <slot:title />
+    <content />
+  </div>
+</if>
+
+<if condition="type==='hs'">
+    {% boolean {{role}}, label="section-{{role}}" value="true", export_to_template_context=True %}
+      {% if widget_data.section-{{role}}.value == true %}
+        <slot:title />
+        <content />
+    {% endif %}
+  </div>
+</if>
+
+<if condition="type==='mk'">
+  <table class="mktoModule" mktoname="{{role}}" id="{{role}}" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse">
+    <tr>
+      <td>
+        <slot:title />
+        
+        <content />
+      </td>
+    </tr>
+  </table>
+</if>

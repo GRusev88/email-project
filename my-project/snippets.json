@@ -1,0 +1,62 @@
+{
+  "html": {
+    "snippets": {
+      "ull": "ul>li[id=${1} class=${2}]*2{ Will work with html, pug, haml and slim }",
+      "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
+      "ran": "{ Wrap plain text in curly braces }",
+
+      "vat"  : "valign=\"top\"",
+      "vam" : "valign=\"middle\"",
+      "vab" : "valign=\"bottom\"",
+      "al"	: "align=\"left\"",
+      "ar"	: "align=\"right\"",
+      "ac"	: "align=\"center\"",
+
+      "ap"	: "a[href=\"tel:+\" target=\"_blank\" class=\"link\"]>span.link",
+      "am"	: "a[href=\"mailto:\" target=\"_blank\" class=\"link\"]>span.link",
+      "aa"	: "a[href=\"#\" target=\"_blank\" class=\"link\"]>span.link",
+
+      "st"	: "style=\"|\"",
+      "im2"	: "<img src='__path__/|.jpg' width='' height='' border='0' alt='' />",
+      "table" : "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">",
+      "tb"	: "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n <tr>\n   <td class=\"${0}\" style=\"${1}\">\n      ${2} \n    </td>\n </tr>\n</table>",
+      "tw"	: "td[width=\"\"]",
+      
+      "tdir": "<table dir=\"rtl\" style=\"direction: rtl\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n <tr>\n   <th class=\"column-dir\" dir=\"ltr\" width=\"${1}\">\n      ${2} \n    </th>\n </tr>\n</table>",
+      "xtdir": "<table dir=\"rtl\" style=\"direction: rtl\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n  <tr>\n    <x-column width=\"${1}\" col=\"dir\" style=\"${3}\">\n    ${4}\n    </x-column>\n  </tr>\n</table>",
+      "xtdir-top": "<table dir=\"rtl\" style=\"direction: rtl\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n  <tr>\n    <x-column width=\"${1}\" col=\"dir-top\" style=\"${3}\">\n    ${4}\n    </x-column>\n  </tr>\n</table>",
+      
+      "tc": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n  <tr>\n    <th class=\"column\" width=\"${1}\">\n      <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n        <tr>\n          <td style=\"${4}\">\n          ${5}\n          </td>\n        </tr>\n      </table>\n    </th>\n  </tr>\n</table>",
+      "tct": "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n  <tr>\n    <th class=\"column-top\" width=\"${1}\">\n      <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n        <tr>\n          <td style=\"${4}\">\n          ${5}\n          </td>\n        </tr>\n      </table>\n    </th>\n  </tr>\n</table>",
+			"co": "th[class=\"column\" width=\"\"]*>table>tr>td",
+			"cot": "th[class=\"column-top\" width=\"\"]*>table>tr>td",
+			"cop": "th[class=\"column mpb-30\" width=\"20\"]>",
+
+      "xcol" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"${2}\" style=\"${3}\">\n    ${4}    \n</x-column>",
+      "xcol-top" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"column-top\" style=\"${3}\">\n    ${4}    \n</x-column>",
+      "xcol-dir" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"column-top\" style=\"${3}\">\n    ${4}    \n</x-column>",
+
+      "shm"   :  "<span class=\"${m-hide}\" class=${2}><br /></span>",
+      "xrmc"	: "<x-repeater platform=\"${mc}\">\n    ${0}    \n</x-repeater>",
+      "xrcm"	: "<x-repeater platform=\"${cm}\">\n    ${0}    \n</x-repeater>",
+      "xrpr"	: "<x-repeater platform=\"${pr}\">\n    ${0}    \n</x-repeater>",
+      "xrhs"	: "<x-repeater platform=\"${hs}\">\n    ${0}    \n</x-repeater>",
+      "xrmk"	: "<x-repeater platform=\"${mk}\">\n    ${0}    \n</x-repeater>",
+
+      "ml"    : "<x-multiline>\n    ${0}    \n</x-multiline>",
+      "mlmc"  : "<x-multiline platform=\"mc\">\n    ${0}    \n</x-multiline>",
+      "mb"    : "<span class=\"mobile-block\"></span>",
+      "trd"	  : "<tr>\n   <td class=\"${0}\">\n    ${1}\n   </td>\n</tr>",
+      "button": "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n <tr>\n   <td class=\"text-button\">\n    <a href=\"#\" target=\"_blank\" class=\"link c-white\" style=\"padding: 12px 30px; display: block;\"><span class=\"link c-white\">View More</span></a>\n  </td>\n </tr>\n</table>",
+      "btn" : "<x-button class=\"button bg-blue rounded ${0}\" buttonPadding=\"p-12 ${1}\" linkColor=\"text-white ${2}\" href=\" ${3}\">\n    ${4}    \n</x-button>"
+      
+    }
+  },
+  "css": {
+    "snippets": {
+      "cb": "color: black",
+      "bsd": "border: 1px solid ${1:red}",
+      "ls": "list-style: ${1}"
+    }
+  }
+}

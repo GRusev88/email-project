@@ -1,0 +1,34 @@
+<script props>
+  module.exports = {
+    type: props.platform,
+  }
+</script>
+
+<if condition="type==='mc'">
+  <div mc:repeatable>
+    <slot:title />
+
+    <content />
+  </div>
+</if>
+
+<if condition="type==='cm'">
+  <div campaignmonitor-repeatable>
+    <slot:title />
+
+    <content />
+  </div>
+</if>
+
+<if condition="type==='pr'">
+  <div pardot-repeatable>
+    <slot:title />
+    <content />
+  </div>
+</if>
+ 
+<if condition="type==='mk'">
+  <div class="mktEditable" id="{{role}}">
+
+  </div>
+</if>
