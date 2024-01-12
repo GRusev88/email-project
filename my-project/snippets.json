@@ -32,7 +32,7 @@
 			"cot": "th[class=\"column-top\" width=\"\"]*>table>tr>td",
 			"cop": "th[class=\"column mpb-30\" width=\"20\"]>",
 
-      "xcol" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"${2}\" style=\"${3}\">\n    ${4}    \n</x-column>",
+      "xcol"     : "<x-column class=\"column${0}\" width=\"${1}\" role=\"${2}\" style=\"${3}\">\n    ${4}    \n</x-column>",
       "xcol-top" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"column-top\" style=\"${3}\">\n    ${4}    \n</x-column>",
       "xcol-dir" : "<x-column class=\"column${0}\" width=\"${1}\" role=\"column-top\" style=\"${3}\">\n    ${4}    \n</x-column>",
 
@@ -48,7 +48,7 @@
       "mb"    : "<span class=\"mobile-block\"></span>",
       "trd"	  : "<tr>\n   <td class=\"${0}\">\n    ${1}\n   </td>\n</tr>",
       "button": "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n <tr>\n   <td class=\"text-button\">\n    <a href=\"#\" target=\"_blank\" class=\"link c-white\" style=\"padding: 12px 30px; display: block;\"><span class=\"link c-white\">View More</span></a>\n  </td>\n </tr>\n</table>",
-      "btn" : "<x-button class=\"button bg-blue rounded ${0}\" buttonPadding=\"p-12 ${1}\" linkColor=\"text-white ${2}\" href=\" ${3}\">\n    ${4}    \n</x-button>"
+      "btn"   : "<x-button class=\"button bg-blue rounded ${0}\" buttonPadding=\"p-12 ${1}\" linkColor=\"text-white ${2}\" href=\" ${3}\">\n    ${4}    \n</x-button>"
       
     }
   },
